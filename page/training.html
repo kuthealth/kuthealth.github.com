@@ -28,16 +28,14 @@ title : index
       document.location = "list_m.html";
     }
     */
-
-
     </script>
  <header>
             <nav id="top">
               <ul class="marginLeft">
-                <li><a href="/page/sleeping.html">Sleeping</a></li>
-                <li><a href="/page/stopping.html">Stopping</a></li>
-                <li><a href="/page/training.html">Training</a></li>
-                <li><a href="/page/eating.html">Eating</a></li>
+                <li><a href="/_posts/sleeping.md">Sleeping</a></li>
+                <li><a href="/page/list.html">Stopping</a></li>
+                <li><a href="/page/list.html">Training</a></li>
+                <li><a href="http://www.facebook.com">Eating</a></li>
             </ul>
             </nav>
          </header>
@@ -82,7 +80,6 @@ title : index
               {% endif %} 
                  </li>
               {% endfor %} 
-
             </ul>
         </div -->
  			</section>
@@ -105,15 +102,11 @@ title : index
     <script src="/dest/js/0.0.1/listPage_min_0.0.1.js"></script>
     <script>
         $Element(document).attach('domready', function() {
-
           //set verticle center
           //utils.setLayout();
-
           var o = Nigayo.List();
-
           //내부 함수에서 Closure scope를 가지고 있음. 
           o.attachEvents();
-
           //본문 영역을 첫번째 선택한 것으로 fire!!
           o.fireLayer(); 
         });
