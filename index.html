@@ -1,397 +1,196 @@
 
-
-
-
 <!DOCTYPE html>
-<html lang='ko'>
-<head>
-  <meta charset='utf-8'>
+<html>
+    <head>
+        <title>  github page에 내 블로그 만들기 |  HI! I'M NIGAYO ;-) </title>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link href="/dest/css/0.0.1/postLayoutPage.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+    <div id="wrap">
+    <!-- facebook START -->
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=486583584796486";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- facebook END -->
 
-  <title>Jekyll을 이용해서 블로그 만들기 (3)</title>
-  
-  <meta name='author' content='croquis.com'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <div id="headerDecoration"></div>
+        <header>
+            <nav id="top">
+              <ul class="marginLeft">
+                <li><a href="/">home</a></li>
+                <li><a href="/page/list.html">posts</a></li>
+                <li><a href="http://github.com/nigayo">github</a></li>
+                <li><a href="http://www.facebook.com/niganiga">facebook</a></li>
+            </ul>
+            </nav>
+         </header>
 
-  <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
-  <link href='/assets/css/style.css?body=1' rel='stylesheet' type='text/css' media='all'>
-  <link href='/assets/pygment.css' rel='stylesheet' type='text/css' media='all'>
+        <article>
+            <header>
+                <h1>
+                 github page에 내 블로그 만들기 
+                </h1>
+                <section>
+                    <span class="gubunBar">|</span> March 18, 2014
+                </section>
+            </header>
 
-  <!--[if lt IE 9]>
-    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
-    <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
-  <![endif]-->
-</head>
-<body>
+            <div id="articleBody">
+                <p>github에는 page라는 것이 있습니다.</p>
 
-<div class='hp-navbar'>
-  <div class='container-fluid'><div class='row'><div class='col-xs-12'>
-    <nav class='hp-nav'>
-      <a class='hp-nav-item' href='/ko/'>croquis.com developers' blog</a>
-    </nav>
-  </div></div></div>
-</div>
+<p>자신이 진행 중인 Project의 설명이나 데모를 볼 수 있는 사이트입니다. </p>
 
-<div class='container'>
-  
+<p>잉? 사이트?? </p>
 
+<p>네,웹사이트 입니다.</p>
 
-<div class='row'>
-  <div class='col-xs-12'>
-    <div class='page-header'>
-      <h1>Jekyll을 이용해서 블로그 만들기 (3)</h1>
-      <p>by 
-Sangmin Yoon
+<p>정적인요소의 개발은 간단히 할 수도 있습니다.</p>
 
-</p>
-    </div>
-  </div>
+<p>좀더 나아가 github page를 개인홈페이지나 블로그로 만드는 것도 재미있을 거 같아보였고요.<br /><br /></p>
 
-  <div class='col-xs-12 col-sm-9'>
-    <p>이전 글에서 Jekyll 이용법을 설명했는데,
-Jekyll이 블로그를 만들기 위한 모든 데이터는 제공하지만,
-실제 페이지를 제공하지는 않기 때문에, 실제 사이트를 만들는 것은 쉽지 않습니다.
-이에 실제 사이트 구축에 바탕으로 삼을 수 있는 페이지 세트를 제공해주는 것이
-<a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>입니다.</p>
+<p>그런 와중에 이런 포스트를 발견하고 시작했습니다. </p>
 
-<p><a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>은 다음과 같은 기능을 기본 제공해줍니다.</p>
+<p>링크의 URL을 보면 ‘하루에 블로그 만들기’라고 되어 있네요.
+실제로 아래 링크대로 하나씩 설치하고 그러면 환경구성을 하루에(?)끝낼 수도 있습니다. 전 절대로 그러지 못했고요 ㅎ</p>
 
-<ul>
-<li>월별 글 목록, 태그 목록, 카테고리 목록을 제공하는 페이지</li>
-<li>RSS 피드</li>
-<li><a href="http://themes.jekyllbootstrap.com/">테마 기능</a>. 기본 테마는 <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>을 이용해서 만들어져 있습니다.</li>
-<li><a href="http://disqus.com/">DISQUS</a>나 <a href="https://developers.facebook.com/docs/reference/plugins/comments/">Facebook Comments</a>과
-같은 서비스에 연결해서 포스팅에 덧글을 달 수 있게 해주는 기능</li>
-<li><a href="http://www.google.com/analytics/">Google Analytics</a>과 같은 사이트 분석 도구 연결</li>
-</ul>
+<p><a href="http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/">http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/</a><br /><br /></p>
 
+<p>github는 <a href="http://jekyllrb.com/" title="Jekyll">jekyll</a>이라는 웹서버 환경에서 동작된다고 합니다. (지킬박사와 하이드에 나오는 그 지킬예요)</p>
 
-<p>이제 각 기능을 하나씩 살펴보도록 하겠습니다.</p>
+<p>jekyll은 일정의 웹서버라고 생각하면 되며 ruby기반입니다. </p>
 
-<h1>설치</h1>
+<blockquote>
+  <p><img src="/images/0318/jekyll.png" alt="jekyll #border" title="지킬박사" /></p>
+</blockquote>
 
-<p><a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>은 그냥 미리 만들어진 파일들의 집합일 뿐입니다.
-따라서 설치시 다른 것은 필요없고, 파일들만 서버에서 받아오면 됩니다.
-파일들은 <a href="https://github.com/">GitHub</a>를 통해 받을 수 있습니다.</p>
+<p>github page에 블로그를 만들려면(또는 웹사이트를 운영하려면)서버환경은 github에서 제공하고 그 위에 HTML,CSS,Javascript그리고 약간의 템플릿 엔진을 이해하면 복잡하고 어려운 서버환경없이 내 웹사이트를,내 블로그를 만들 수 있습니다. DB도 필요없습니다. DB에 저장되야 할 블로그 포스트는 github 저장소에 소스처럼 저장하면 됩니다.(정확히는 markdown파일입니다)  <br /><br /></p>
 
-<div class="highlight"><pre><code class="bash">git clone https://github.com/plusjade/jekyll-bootstrap.git
-<span class="nb">cd </span>jekyll-bootstrap
-jekyll --server
-</code></pre></div>
+<p>다시말해서 HTML,CSS,JavaScript를 학습하는 분들이라면 서버환경의 어려운 설정없이 간단히 본인의 웹사이트를 만들어볼 수 있고 운영할 수 있습니다. 호스팅 비용은 당연히 들지 않을테고요. <br /><br /></p>
 
+<p>사실 처음에는 그냥 한번 해볼까 했는데 막상 하다보니 꽤 번거로운 작업들이 필요했습니다. 서버환경을 쥐락펴락하지 못하는 답답함등…
+(자세한 개발이야기는 나중에 정리해볼게요) <br /><br /></p>
 
-<p>접속해보면 다음과 같은 화면을 볼 수 있습니다.</p>
+<p>그리고 github에서 동작되는 것이라 로컬에서 개발/테스트가 가능해야 할 겁니다. 한그러면 매번 로컬에서 개발하고 github에 올려서 확인해야 하는 말도 안되는 상황이일어나겠죠.</p>
 
-<p><img src="/assets/ko/2012-05-28-1-jekyll-blog-3-1.png" alt="첫 화면" /></p>
+<p>로컬에서 개발과 테스트를 할 수 있습니다.
+jekyll을 로컬에 설치하고 서버를 띄운 상태로 개발하면 됩니다. 이것은 정확히 github에 올려진 결과와 일치합니다.</p>
 
-<p>시작 페이지 내용과 상단에서 페이지 목록, 글 목록, 태그 목록, 카테고리 목록에 대한 링크를 확인할 수 있습니다.</p>
+<p>다시 말해 내 로컬환경이 github page에서 동작하는 개발환경이 되는 것입니다. </p>
 
-<h1>시작 페이지 수정</h1>
+<p>그리고나서 localhost:8080 이렇게 설정해둔 서버에서 동작을 확인할 수 있습니다. <br /><br /></p>
 
-<p>시작 페이지를 한번 바꿔보겠습니다. index.md를 열어 다음과 수정합니다.</p>
+<blockquote>
+  <p><img src="/images/0318/local.png" alt="#default #border" title="jekyll을 로컬에서 개발서버로 활용" /> <br /><br /></p>
+</blockquote>
 
-<div class="highlight"><pre><code class="html">---
-layout: page
-title: Jekyll 테스트 블로그입니다.
----
-이 사이트는 Jekyll로 만들어진 테스트용 블로그입니다.
-</code></pre></div>
+<p>이후에 로컬에서 개발이 완료된 소스코드를 모두 github에 commit합니다. 그러면 github에서는 자동으로 이를 해석해서 github page에서 보여줍니다.(github의 page가 무엇이고 어떻게 동작되는 것인지 공부하시면 됩니다)<br /><br /></p>
 
+<p>블로그 포스트를 쓰려면 markdown 형태로 작성하면 됩니다. 
+그걸 github에 commit하면 블로그 등록됩니다. <br /><br /></p>
 
-<p>아까 띄어놓은 Jekyll 서버를 그대로 뒀으면 자동으로 페이지를 다시 생성합니다.
-(_config.yml을 보면 'auto: true' 설정이 있습니다.)
-서버를 종료시켰다면 다시 실행합니다.
-이제 시작 페이지가 다음과 같이 바뀐 것을 볼 수 있습니다.</p>
+<p>웹사이트의 디자인이나 CSS를 쉽게 정복하기 위해서는 jekyll-bootstrap 같은 것도 있는 것 같네요. 
+전 시험삼아 CSS를 만들어서 돌려보는 바람에 bootstrap를 사용하진 않았습니다. 스타일 작업이 번거로운 분들은 사용하심 되겠네요. <br /><br /></p>
 
-<p><img src="/assets/ko/2012-05-28-1-jekyll-blog-3-2.png" alt="수정된 첫 화면" /></p>
+<p>그외에 몇가지 더 시험삼아 해본 것들도 있습니다. </p>
 
-<h1>포스팅 하기</h1>
+<p>웹사이트의 형태를 좀 갖췄음해서 Disqus라는 댓글모듈, 페북 like버튼을 달아서 구색을 맞췄고요.</p>
 
-<p>포스팅을 추가해봅시다. _posts 디렉토리에 기본 포스팅이 하나 있는데 이를 지우고,
-이전 글에서 설명했듯이 날짜와 제목을 파일명으로 해서 파일을 만들면 됩니다.</p>
+<p>비록 front-end개발만 하면 되는 것이지만 필요하다면 빌드/배포로직을 넣는 것도 당연히 가능하겠습니다.
+예를 들어 test code를 구현하고, grunt를 적용해서 파일을 머지하고, 작성한 테스트코드를 돌리는 것도 가능할테고요.</p>
 
-<p>파일명을 어떻게 하고, 기본적으로 필요한 텍스트가 뭔지 기억하기 어려운 경우를 위해
-<a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>은 <a href="http://rake.rubyforge.org/">Rake</a> 명령을 제공합니다.
-다음과 같이 명령을 내리면 현재 날짜로 포스팅을 생성해줍니다.</p>
+<p>요 과정을 저도 살짝 해두었고요.(아래 github소스에서 확인가능해요)</p>
 
-<div class="highlight"><pre><code class="bash">rake post <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;First Posting&quot;</span>
-</code></pre></div>
+<p>이런점에서는 별다른 제한은 없겠네요. <br /><br /></p>
 
-
-<p>이렇게 생성된 _posts/2012-05-28-first-posting.md를 열어 다음과 같이 수정합니다.</p>
+<p>디자인은 심플함을 가장한 허전함이 컨셉입니다. 해외 모 블로그의 UI 몇곳을 기억해서 상당히 본 딴 것임을 고백합니다.</p>
 
-<div class="highlight"><pre><code class="html">---
-layout: post
-title: &quot;첫번째 포스팅&quot;
-category: test
-tags: [test, first]
----
-이 글을 보고 있다면 첫번째 포스팅에 성공한 것입니다.
-</code></pre></div>
-
-
-<p>Archive 페이지로 가면 방금 포스팅한 글에 대한 링크가 있고, 눌러보면 다음과 같이 표시됩니다.</p>
-
-<p><img src="/assets/ko/2012-05-28-1-jekyll-blog-3-3.png" alt="포스팅 한 글" /></p>
-
-<h1>덧글 기능 추가</h1>
-
-<p>Jekyll로 할 수 없는 것 중 하나가 덧글 기능인데 <a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>은 이부분에 대해서
-미리 작업이 되어 있습니다. 위 스크린샷을 보면 <a href="http://disqus.com/">DISQUS</a> 덧글 시스템이 보이는데,
-이것은 _config.yml의 다음 부분을 통해 설정된 것입니다.</p>
-
-<div class="highlight"><pre><code class="yaml">  <span class="l-Scalar-Plain">comments</span> <span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">provider</span> <span class="p-Indicator">:</span> <span class="l-Scalar-Plain">disqus</span>
-    <span class="l-Scalar-Plain">disqus</span> <span class="p-Indicator">:</span>
-      <span class="l-Scalar-Plain">short_name</span> <span class="p-Indicator">:</span> <span class="l-Scalar-Plain">jekyllbootstrap</span>
-</code></pre></div>
-
-
-<p><a href="http://disqus.com/">DISQUS</a>에 가입후 사이트를 추가할 때 기입한 짧은 이름(shortname)을 위 텍스트에 적어주시면 됩니다.
-다른 사이트를 이용하는 경우에도 비슷하게 ID만 적어주고, 이용하는 제공자(provider)를 적어주면 바로
-표시됩니다.</p>
-
-<p>사이트 분석 도구를 연결하는 과정도 비슷합니다.</p>
-
-<h1>시작 페이지에 포스팅 표시하기</h1>
-
-<p>많은 블로그가 시작 페이지에서 가장 최근 포스팅의 일부 또는 전체를 표시해줍니다.
-위에서 작성한 시작 페이지는 이런 기능이 없는데, 이런 기능을 추가해봅시다.</p>
-
-<p>시작 페이지에서 포스팅 목록을 보여주는 경우 수십개의 글을 한번에 보여줄 수는 없으니,
-보통 페이지별로 포스팅을 나눠서 보여줍니다.</p>
-
-<p>Jekyll은 이런 기능을 지원합니다. _config.yml을 열어서 다음과 같은 내용을 추가합니다.</p>
-
-<div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">paginate</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
-</code></pre></div>
-
-
-<p>한 페이지에 포스팅을 세개씩 보여주겠다는 의미입니다.
-이렇게 하면 시작 페이지를 작성할 때 paginator라는 변수에 필요한 정보가
-담겨서 <a href="http://liquidmarkup.org/">Liquid</a> 처리를 합니다.</p>
-
-<p>다음은 예제로 만든 시작 페이지입니다. 단, 시작 페이지의 확장자가 html일 경우만 동작하므로,
-index.md를 index.html로 변경합니다.
-첫 페이지는 index.html, 두번째 페이지는 page2/index.html로 생성됩니다.</p>
-
-<div class="highlight"><pre><code class="html">---
-layout: page
-title: Jekyll 테스트 블로그입니다.
----
-{% include JB/setup %}
-
-<span class="nt">&lt;ul&gt;</span>
-{% for post in paginator.posts %}
-  <span class="nt">&lt;li&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}{{ post.url }}&quot;</span><span class="nt">&gt;&lt;span&gt;</span>{{ post.title }}<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;span&gt;</span>{{ post.date | date: &quot;%Y-%m-%d&quot; }}<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;p&gt;</span>{{ post.content | truncate: 15 }}<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn js-btn&quot;</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}{{ post.url }}&quot;</span><span class="nt">&gt;</span>더 보기 <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-{% endfor %}
-<span class="nt">&lt;/ul&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul&gt;</span>
-{% if paginator.previous_page %}
-    <span class="nt">&lt;li&gt;</span>
-  {% if paginator.previous_page == 1 %}
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}/&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/a&gt;</span>
-  {% else %}
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}/page{{paginator.previous_page}}&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/a&gt;</span>
-  {% endif %}
-    <span class="nt">&lt;/li&gt;</span>
-{% else %}
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-{% endif %}
-
-{% if paginator.page == 1 %}
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-{% else %}
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}/&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-{% endif %}
-
-{% for count in (2..paginator.total_pages) %}
-  {% if count == paginator.page %}
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>{{count}}<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  {% else %}
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}/page{{count}}&quot;</span><span class="nt">&gt;</span>{{count}}<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  {% endif %}
-{% endfor %}
-
-{% if paginator.next_page %}
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ BASE_PATH }}/page{{paginator.next_page}}&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-{% else %}
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-{% endif %}
-  <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
-
-
-<p>프로그램을 어느 정도해보신 분은 동작을 이해하기 어렵지 않다고 생각해 따로 설명은 드리지 않겠습니다.
-한가지만 설명드리면 BASE_PATH는 Jekyll에서 설정해주는 것이 아니고,
-<a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>이 해주는 것입니다. 이를 사용하기 위해서 파일 시작 부분에서 JB/setup이란 파일을
-포함시키고 있는데, 이 파일은 _includes/JB 디렉토리에 있습니다.</p>
-
-<p>위와 같이 작성한 후의 화면은 다음과 같습니다.</p>
-
-<p><img src="/assets/ko/2012-05-28-1-jekyll-blog-3-4.png" alt="페이지로 구분된 첫 화면" /></p>
-
-<h1>플러그인 추가</h1>
-
-<p>위 화면을 보면 포스팅의 일부를 보여주고 있습니다.
-이 부분은 {{ post.content | truncate: 15 }} 코드에 의한 것입니다.
-그런데 한글이 잘리고 있네요. truncate라는 기능이 한글을 인식하지 못해서 발생하는 문제입니다.
-(만약 Ruby의 버전이 1.9면 정상 동작합니다.)</p>
-
-<p>이 기능은 <a href="http://liquidmarkup.org/">Liquid</a>가 제공하는 필터 기능입니다.
-그리고 Jekyll은 사용자가 <a href="http://liquidmarkup.org/">Liquid</a> 필터를 추가할 수 있는 기능을 제공합니다.</p>
-
-<p>_plugins 디렉토리에 croquis.rb라는 파일을 추가해서 다음과 같이 작성합니다.</p>
-
-<div class="highlight"><pre><code class="ruby"><span class="k">module</span> <span class="nn">Jekyll</span>
-  <span class="k">module</span> <span class="nn">CroquisFilter</span>
-    <span class="k">def</span> <span class="nf">truncateUTF8</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">length</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">truncate_string</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
-      <span class="k">if</span> <span class="n">input</span><span class="o">.</span><span class="n">nil?</span> <span class="k">then</span> <span class="k">return</span> <span class="k">end</span>
-      <span class="n">l</span> <span class="o">=</span> <span class="n">length</span><span class="o">.</span><span class="n">to_i</span> <span class="o">-</span> <span class="n">truncate_string</span><span class="o">.</span><span class="n">length</span>
-      <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="mi">0</span>
-      <span class="n">utf8</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;U*&quot;</span><span class="p">)</span>
-      <span class="n">utf8</span><span class="o">.</span><span class="n">length</span> <span class="o">&gt;</span> <span class="n">length</span><span class="o">.</span><span class="n">to_i</span> <span class="p">?</span> <span class="n">utf8</span><span class="o">[</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">l</span><span class="o">].</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;U*&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">truncate_string</span> <span class="p">:</span> <span class="n">input</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="no">Liquid</span><span class="o">::</span><span class="no">Template</span><span class="o">.</span><span class="n">register_filter</span><span class="p">(</span><span class="no">Jekyll</span><span class="o">::</span><span class="no">CroquisFilter</span><span class="p">)</span>
-</code></pre></div>
-
-
-<p>이렇게 한 후 truncate를 truncateUTF8로 바꾸면 한글이 잘리지 않고 잘 표시됩니다.</p>
-
-<p>다른 플러그인을 추가하는 방법은 <a href="https://github.com/mojombo/jekyll/wiki/Plugins">https://github.com/mojombo/jekyll/wiki/Plugins</a>을 참고하시면 됩니다.
-<a href="http://liquidmarkup.org/">Liquid</a>가 제공하는 필터는 <a href="https://github.com/shopify/liquid/wiki/liquid-for-designers">https://github.com/shopify/liquid/wiki/liquid-for-designers</a>를,
-여기에 Jekyll이 추가로 제공하는 필터는 <a href="https://github.com/mojombo/jekyll/wiki/Liquid-Extensions">https://github.com/mojombo/jekyll/wiki/Liquid-Extensions</a>를
-참고하세요.</p>
-
-<h1>결론</h1>
-
-<p>여기까지가 현재 저희 블로그에 적용된 내용입니다.
-이 정도면 충분히 간단한 블로그를 만들 수 있습니다.
-물론 이 정도로 만족하지 못하신다면 얼마든지 기능을 추가할 수 있는 자유를
-Jekyll은 제공합니다.</p>
-
-<p>Jekyll을 이용해서 멋진 블로그를 만드는데 이 글이 도움이 되었으면 합니다.
-긴 글 읽어주셔서 감사합니다.</p>
-
-<p>이 블로그의 소스는 <a href="https://github.com/croquiscom/devblog">https://github.com/croquiscom/devblog</a>에서 보실 수 있습니다.</p>
-
-  </div>
-
-  <div class='col-xs-12 col-sm-3'>
-    <div class='post-date'>
-      <i class='glyphicon glyphicon-pencil'></i>
-      <span>28 May 2012</span>
+<p>그리고 아직 이 사이트는 제대로 테스트도 안됐고 화면이 군데군데 찌그려저 울상인 상태입니다.<br /><br /> </p>
+
+<p>소스는 여기 있습니다. </p>
+
+<p><a href="https://github.com/nigayo/nigayo.github.io">https://github.com/nigayo/nigayo.github.io</a><br /><br /></p>
+
+<p><strong>마지막으로 이 github에 블로그나 홈페이지를 만드시려면 아래와 같이 공부하시면 됩니다</strong><br /><br /></p>
+
+<ol>
+	<li> 1. github page가 무엇인지 공부합니다.</li>
+	<li> 2. jekyll 홈페이지에서 step by step으로 따라합니다(꽤 친절하게 되어 있습니다). 이과정은 좀 오래 걸립니다</li>
+	<li> 3. 내 사이트를 만들어보고 github에 commit합니다</li>
+</ol>
+
+
+            </div>
+        </article>
+
+        <!-- facebook START -->
+        <section id="fb-widget">
+            <div class="fb-like" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </section>
+        <!-- facebook END  -->
+
+        <!-- DISQUS Area START  -->
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'nigayo'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        <!-- DISQUS Area END -->
+    
+
+        <footer>
+            <section>
+              <img src="/images/crong.jpg">
+              <ul>
+                <li>Younjisu , NEXT</li>
+                <li>aniga75@gmail.com</li>
+              </ul>
+          </section>
+        </footer>
+      <!-- div id="mamul"> </div -->
     </div>
 
-    
-      <ul class='tag_box inline'>
-        <li><i class='glyphicon glyphicon-tags'></i></li>
-        
-        
-   
-    <li><a href="/tags.html#infrastructure-ref">infrastructure <span>6</span></a></li>
-   
-    <li><a href="/tags.html#jekyll-ref">jekyll <span>3</span></a></li>
-   
-    <li><a href="/tags.html#blog-ref">blog <span>3</span></a></li>
-   
-    <li><a href="/tags.html#bootstrap-ref">bootstrap <span>1</span></a></li>
-  
-
-
-
-      </ul>
-    
-  </div>
-
-  <div class='col-xs-12'>
-    <hr>
-
-    <ul class='pager'>
-      
-        <li class='previous'><a href='/ko/2012/05/27/1-jekyll-blog-2.html' title='Jekyll을 이용해서 블로그 만들기 (2)'>&larr; 이전 글</a></li>
-      
-      
-        <li class='next'><a href='/ko/2012/06/18/1-ssh-without-password.html' title='암호 없이 SSH 접속하기'>다음 글 &rarr;</a></li>
-      
-    </ul>
-    <hr>
-    <div class='text-center'>
-    
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+    <!-- DISQUS : count comments -->
+    <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'croquiscom-devblog'; // Required - Replace example with your forum shortname
+    var disqus_shortname = 'nigayo'; // required: replace example with your forum shortname
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
 
-    </div>
-  </div>
-</div>
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-45694371-2', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-</div>
-
-<div class='container-fluid'>
-  <hr>
-  <footer>
-    <p>
-      &copy; 2012-2014 croquis.com
-      <span class='pull-right text-muted'>
-        powered by
-        <a href='http://jekyllrb.com/' target='_blank'>Jekyll</a>
-        and
-        <a href='http://getbootstrap.com/' target='_blank'>Bootstrap 3.1.1</a>
-      </span>
-    </p>
-  </footer>
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-48716672-3', 'croquis.com');
-  ga('send', 'pageview');
-
-</script>
-
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
-<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
-
-</body>
+  </body>
 </html>
