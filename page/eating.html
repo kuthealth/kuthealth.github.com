@@ -32,93 +32,229 @@ title : index
  <header>
             <nav id="top">
               <ul class="marginLeft">
-                <li><a href="/_posts/sleeping.md">Sleeping</a></li>
-                <li><a href="/page/list.html">Stopping</a></li>
-                <li><a href="/page/list.html">Training</a></li>
-                <li><a href="http://www.facebook.com">Eating</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/page/sleeping.html">Sleeping</a></li>
+                <li><a href="/page/stopping.html">Stopping</a></li>
+                <li><a href="/page/training.html">Training</a></li>
+                <li><a href="/page/eating.html">Eating</a></li>
             </ul>
             </nav>
          </header>
 
-  		<section id="mainBody" style="visibility:hidden;">
-        <ul id="categoryList">
-          {% for catName in site.category-list %}
-         <li>
-          {{ catName }}
-         </li>
-          {% endfor %}
-        </ul>
-        <section id="list">
-          <div></div>
+  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
 
-          {% for catName in site.category-list %} 
-          <section class={{catName | prepend :'CAT_'}}>
-            <!-- h1> {{catName}} </h1 -->
-          <ul>
-            {% for page in site.posts %}         
-              {% for pc in page.categories %}
-                   {% if pc == catName %}
-                     <a href="{{ page.url }}">
-                    <li>{{ page.title }}</li>
-                    </a>
-                  {% endif %} 
-              {% endfor %} 
-           {% endfor %}
-          </ul>
-          </section>
-          {% endfor %} 
+<HEAD>
+<META NAME="Generator" CONTENT="Hancom HWP 9.0.0.627">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<TITLE></TITLE>
+<STYLE type="text/css">
+<!--
+p.HStyle0
+	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle0
+	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle0
+	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle1
+	{style-name:"본문"; margin-left:15.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle1
+	{style-name:"본문"; margin-left:15.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle1
+	{style-name:"본문"; margin-left:15.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle2
+	{style-name:"개요 1"; margin-left:10.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle2
+	{style-name:"개요 1"; margin-left:10.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle2
+	{style-name:"개요 1"; margin-left:10.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle3
+	{style-name:"개요 2"; margin-left:20.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle3
+	{style-name:"개요 2"; margin-left:20.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle3
+	{style-name:"개요 2"; margin-left:20.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle4
+	{style-name:"개요 3"; margin-left:30.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle4
+	{style-name:"개요 3"; margin-left:30.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle4
+	{style-name:"개요 3"; margin-left:30.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle5
+	{style-name:"개요 4"; margin-left:40.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle5
+	{style-name:"개요 4"; margin-left:40.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle5
+	{style-name:"개요 4"; margin-left:40.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle6
+	{style-name:"개요 5"; margin-left:50.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle6
+	{style-name:"개요 5"; margin-left:50.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle6
+	{style-name:"개요 5"; margin-left:50.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle7
+	{style-name:"개요 6"; margin-left:60.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle7
+	{style-name:"개요 6"; margin-left:60.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle7
+	{style-name:"개요 6"; margin-left:60.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle8
+	{style-name:"개요 7"; margin-left:70.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle8
+	{style-name:"개요 7"; margin-left:70.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle8
+	{style-name:"개요 7"; margin-left:70.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle9
+	{style-name:"쪽 번호"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle9
+	{style-name:"쪽 번호"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle9
+	{style-name:"쪽 번호"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle10
+	{style-name:"머리말"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:150%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle10
+	{style-name:"머리말"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:150%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle10
+	{style-name:"머리말"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:150%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle11
+	{style-name:"각주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle11
+	{style-name:"각주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle11
+	{style-name:"각주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle12
+	{style-name:"미주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle12
+	{style-name:"미주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle12
+	{style-name:"미주"; margin-left:13.1pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:"normal"; font-style:"normal"; color:#000000;}
+p.HStyle13
+	{style-name:"메모"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:left; text-indent:0.0pt; line-height:130%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:-5%; font-weight:"normal"; font-style:"normal"; color:#000000;}
+li.HStyle13
+	{style-name:"메모"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:left; text-indent:0.0pt; line-height:130%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:-5%; font-weight:"normal"; font-style:"normal"; color:#000000;}
+div.HStyle13
+	{style-name:"메모"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:left; text-indent:0.0pt; line-height:130%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:-5%; font-weight:"normal"; font-style:"normal"; color:#000000;}
+-->
+</STYLE>
+</HEAD>
 
-        </section>
-        <!-- div id="listWrap">
-          <ul id="postList">
-               {% for post in site.posts limit:5 %}
-                 <li>
-                  <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-                  <div>{{ post.date | date: "%Y년 %m월 %d일" }}</div>
-                   {% if pc == catName %}
-                <span>list</span>
-              {% endif %} 
-                 </li>
-              {% endfor %} 
-            </ul>
-        </div -->
- 			</section>
+<BODY>
 
-      <!-- section>
-      <a href="http://localhost:4000/next/2014/01/24/newEdu.html#disqus_thread"> comment link test</a>
-      </section -->
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
 
-  		 <footer>
-            <section>
-              <img src="/images/crong.jpg">
-              <ul>
-                <li>Younjisu , NEXT</li>
-                <li>aniga75@gmail.com</li>
-              </ul>
-          </section>
-        </footer>
-      <!-- div id="mamul"> </div -->
-  	</div>
-    <script src="/dest/js/0.0.1/listPage_min_0.0.1.js"></script>
-    <script>
-        $Element(document).attach('domready', function() {
-          //set verticle center
-          //utils.setLayout();
-          var o = Nigayo.List();
-          //내부 함수에서 Closure scope를 가지고 있음. 
-          o.attachEvents();
-          //본문 영역을 첫번째 선택한 것으로 fire!!
-          o.fireLayer(); 
-        });
-    </script>
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-size:20.0pt;font-family:"새굴림";font-weight:"bold";line-height:160%'>올바른 식습관 바로알자</SPAN></P>
 
-     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-45694371-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
-</html>
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>평소에는 아무 탈 없이 건강한 사람이라도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>한 번쯤은 소화가 안되어 고생한 경험이 있을 것입니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화불량은 속이 더부룩하고 배에 가스가 차는 증상을 보이는데요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>이러한 증상을 대비하기위해 원인과 올바른 식습관에 대해 알아야겠죠?</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;<IMG src="file:///C:\Users\이재승\Desktop\PICEE4E.png" alt="그림입니다.
+원본 그림의 이름: CLP0000062889d5.bmp
+원본 그림의 크기: 가로 400pixel, 세로 300pixel" width="302" height="208" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'><BR></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화불량의 원인</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화불량은 식습관이 불규칙하거나 급하게 식사하여, 음식물이 소화효소의</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>작용을 충분하게 거치지 못하고, 위장관으로 넘어가면서 나타난다고 해요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>그리고 식사 중 공기를 삼키거나 배변이 불규칙해도 증상이 나타난대요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;<IMG src="file:///C:\Users\이재승\Desktop\PICEE7E.png" alt="그림입니다.
+원본 그림의 이름: CLP000006280001.bmp
+원본 그림의 크기: 가로 400pixel, 세로 400pixel" width="302" height="208" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'><BR></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>올바른 식습관</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>첫 번째, 평소 식사 태도를 체크하여, 자신이 무심코 지나친</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화를 방해하는 행동에 대해서 살펴봐야 합니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>식사 태도는 소화에 많은 영향을 차지하기 때문입니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>먼저 매 끼니마다 식사 시간이 어느 정도인지 파악하도록 해요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>음식물이 입 안에서 부서지면서 침과 섞여야만 소화가 잘되므로</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>적어도 30분 이상의 식사시간을 갖도록 해야 합니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>두 번째, 식사를 거르지 말아야 합니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>식사를 거르게 되면, 위의 기능이 떨어져 소화불량을 일으킵니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>세 번째, 스트레스를 받지 말아야 합니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>`밥 먹을 때는 개도 안 건드린다`는 말이 있듯이 식사 전에 혹은 식사 중에</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>스트레스를 받게 되면, 위에 분포하는 신경들이 영향을 받아 소화를 방해합니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;<IMG src="file:///C:\Users\이재승\Desktop\PICEE9E.png" alt="그림입니다.
+원본 그림의 이름: CLP000006280002.bmp
+원본 그림의 크기: 가로 400pixel, 세로 266pixel" width="302" height="208" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'><BR></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>지방이 많은 음식은 소화되는 시간이 길어지기 때문에</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화가 잘 되지 않는 사람은 피하는 것이 올바른 식습관입니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>우리가 소화가 잘 될 것이라고 생각하고 있는 요구르트나 우유</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>그리고 아이스크림도 소화불량을 일으키는 음식 중 하나입니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>양념이 들어간 음식으로 위를 적당히 자극한다면</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>식욕도 돋우고 소화도 잘 된다고 하네요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>평소에 올바른 식습관을 갖기 위해서는</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>식사 때마다 가볍게는 10분 이상의 거리를 산책하면 좋아요.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>힘든 운동이라면 위에 부담이 가지 않도록 식후 1시간 뒤에 하면 됩니다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>&nbsp;</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>소화불량은 큰 일로 여기지 않아 소화제로만 해결하려고 하는데.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"새굴림"'>한 달 이상 증상이 나타나면 내시경 검사를 받아야합니다.</SPAN></P>
+
+</BODY>
+
+</HTML>
