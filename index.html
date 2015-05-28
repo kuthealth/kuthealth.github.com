@@ -46,40 +46,22 @@
                 <section>
                     <span class="gubunBar">|</span> public void doCurrentDate(){
          <script> 
-   import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
+   var date = new Date(); 
 
-public class ggari_date {
-   public static void main(String[] args) {
-      int cYear;
-      int cMonth;
-      int cDay;
-      String 오늘날짜 = "2013-8-13";
-      String temp;
+var year = date.getFullYear(); 
 
-      Calendar calendar = new GregorianCalendar(Locale.KOREA);
-      cYear = calendar.get(Calendar.YEAR);
-      cMonth = calendar.get(Calendar.MONTH) + 1;
-      cDay = calendar.get(Calendar.DAY_OF_MONTH);
-      temp = cYear + "-" + cMonth + "-" + cDay; // 임시변수에 담아준다
-      System.out.println("GregorianCalendar=" + cYear + "-" + cMonth + "-"+ cDay);
+var month = new String(date.getMonth()+1); 
 
-      SimpleDateFormat format = new SimpleDateFormat("yyyy년mm월dd일");
-      String date = format.format(new Date());
-      System.out.println("simpleDate=" + date);
-
-      SimpleDateFormat format1 = new SimpleDateFormat("yyyy년mm월dd일HH시mm분ss초");
-      String date1 = format1.format(new Date());
-      System.out.println("simpleDate1=" + date1);
-
-      if (오늘날짜.equals(temp)) {
-         System.out.println("같음");
-      }
-   }
-}  </script>
+var day = new String(date.getDate()); 
+// 한자리수일 경우 0을 채워준다. 
+if(month.length == 1){ 
+  month = "0" + month; 
+} 
+if(day.length == 1){ 
+  day = "0" + day; 
+} 
+$("#regDate").val(year + "" + month + "" + day);
+</script>
                 </section>
             </header>
 
